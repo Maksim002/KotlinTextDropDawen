@@ -41,14 +41,15 @@
 
             <EditText
                 android:id="@+id/textMaven"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
                 android:background="@null"
                 android:hint="Поиск"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
 
             <ImageView
                 android:id="@+id/clearTxtBtn"
@@ -67,7 +68,7 @@
             android:orientation="horizontal">
 
             <com.mikhaellopez.circularimageview.CircularImageView
-                android:id="@+id/image_profile"
+                android:id="@+id/imageProfile"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
@@ -83,31 +84,33 @@
 
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/titoloTvThim"
+                    android:id="@+id/descriptionText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="rdfehjcfjk"
+                    android:text="hint"
                     android:textColor="@color/black"
-                    android:textSize="12sp" />
+                    android:textSize="12sp"
+                    tools:ignore="HardcodedText,NestedWeights" />
 
                 <TextView
-                    android:id="@+id/titoloTv"
+                    android:id="@+id/titleTxt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:background="@null"
-                    android:text="rdfehjcfjk"
-                    android:textSize="16sp" />
+                    android:text="Title"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
             </LinearLayout>
 
             <ImageView
@@ -134,16 +137,18 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/textHim"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/white"
-        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
         android:textColor="@color/black"
         android:text="Грузчик 1"
         android:padding="3dp"
         android:textSize="12sp"
         app:layout_constraintTop_toTopOf="@+id/layout"
         app:layout_constraintBottom_toTopOf="@+id/layout"
-        app:layout_constraintLeft_toLeftOf="@+id/layout"/>
+        app:layout_constraintLeft_toLeftOf="@+id/layout"
+        tools:ignore="HardcodedText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,7 +2,7 @@ package com.example.appcompat
 
 import android.graphics.drawable.Drawable
 
-class ModelSSSS (
+class ValueListModel (
     var im: Drawable,
     var text: String
 )

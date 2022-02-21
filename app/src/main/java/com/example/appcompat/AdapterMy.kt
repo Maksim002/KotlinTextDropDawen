@@ -1,14 +1,12 @@
 package com.example.appcompat
 
-import android.content.Context
-import android.text.TextUtils
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
-class AdapterMy(var listener: MyHolder.Listener, var item: ArrayList<ModelSSSS> = arrayListOf()): RecyclerView.Adapter<MyHolder>() {
+class AdapterMy(var listener: MyHolder.Listener, var item: ArrayList<SearchElementsModel> = arrayListOf()): RecyclerView.Adapter<MyHolder>() {
 
-    fun update(list: ArrayList<ModelSSSS> = arrayListOf()){
+    fun update(list: ArrayList<SearchElementsModel> = arrayListOf()){
         item = list
         notifyDataSetChanged()
     }
@@ -30,8 +28,8 @@ class AdapterMy(var listener: MyHolder.Listener, var item: ArrayList<ModelSSSS> 
        holder.bond(item[holder.adapterPosition], holder)
     }
 
-    fun filter(sequence: CharSequence? = null, list: ArrayList<ModelSSSS>? = null): ArrayList<ModelSSSS> {
-        val temp = ArrayList<ModelSSSS>()
+    fun filter(sequence: CharSequence? = null, list: ArrayList<SearchElementsModel>? = null): ArrayList<SearchElementsModel> {
+        val temp = ArrayList<SearchElementsModel>()
         for (s in list!!) {
             if (s.text.toLowerCase().contains(sequence!!)) {
                 temp.add(s)
